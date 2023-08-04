@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "d1 d1 d2"
+    "d3 d4 d2"
+    "d3 d5 d5";
+  gap: 10px; /*Ecart entre les boites */
+}
+div:nth-child(1) {
+  background: yellow;
+  grid-area: d1;
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: d2;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: d4;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: d3;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: d5;
+}
